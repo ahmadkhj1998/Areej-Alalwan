@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أريج الألوان | تصميم وتنفيذ ديكورات</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">أريج <span>الألوان</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#services">خدماتنا</a></li>
+                <li><a href="#portfolio">أعمالنا</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+        </nav>
+        <div class="header-btns">
+            <a href="https://wa.me/966500000000" class="whatsapp-nav"><i class="fab fa-whatsapp"></i> اطلب استشارة</a>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="slider">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1600')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1600')"></div>
+        </div>
+        <div class="hero-content" data-aos="zoom-in">
+            <div class="hero-box">
+                <h1>نصمم لك الفخامة.. وننفذها بدقة</h1>
+                <p>أريج الألوان: ريادة في التصميم الداخلي والخارجي والإشراف الهندسي المتكامل في الرياض</p>
+                <a href="#portfolio" class="btn-gold">استعرض أعمالنا</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-text" data-aos="fade-left">
+                    <h2 class="section-title">من نحن</h2>
+                    <h3>مكتب أريج الألوان.. شريكك في بناء بيت العمر</h3>
+                    <p>مكتب أريج الألوان هو كيان هندسي متخصص في خلق فضاءات سكنية وتجارية تجمع بين الفن الخالص والوظيفة العملية. نحن لا نصمم مجرد جدران، بل نصمم تجارب حياة تعكس ذوقكم الرفيع.</p>
+                    <p>نتخصص في تصميم وتنفيذ الديكورات الداخلية والخارجية واللاندسكيب، مع التزامنا التام بمبدأ "التنفيذ كما في المخطط" من خلال إشرافنا الهندسي الميداني الدقيق، مما يجعلنا الشريك الموثوق الذي يستحق ثقتكم.</p>
+                    <ul class="about-features">
+                        <li><i class="fas fa-check-circle"></i> دقة متناهية في المواعيد والتنفيذ.</li>
+                        <li><i class="fas fa-check-circle"></i> ابتكار هندسي يناسب الميزانية والمساحة.</li>
+                        <li><i class="fas fa-check-circle"></i> إشراف ميداني يضمن أعلى جودة للمواد.</li>
+                    </ul>
+                </div>
+                <div class="about-img" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800" alt="About Areej Colors">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title text-center">خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <i class="fas fa-couch"></i>
+                    <h3>تصميم داخلي</h3>
+                    <p>تصاميم عصرية للمجالس والصالات تدمج بين الرفاهية والراحة.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-home"></i>
+                    <h3>تصميم خارجي</h3>
+                    <p>واجهات معمارية مميزة وتنسيق حدائق يحول منزلك إلى تحفة فنية.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-hard-hat"></i>
+                    <h3>إشراف هندسي</h3>
+                    <p>نضمن لك مطابقة التنفيذ للمخططات بأعلى معايير الجودة العالمية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title text-center">معرض أعمالنا</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" onclick="openGallery('bath')" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=500"><div class="overlay"><h3>حمامات</h3></div></div>
+                <div class="portfolio-item" onclick="openGallery('living')" data-aos="zoom-in" data-aos-delay="100"><img src="https://images.unsplash.com/photo-1583847268964-b28dc2f51ac9?w=500"><div class="overlay"><h3>صالات</h3></div></div>
+                <div class="portfolio-item" onclick="openGallery('majlis')" data-aos="zoom-in" data-aos-delay="200"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=500"><div class="overlay"><h3>مجالس</h3></div></div>
+                <div class="portfolio-item" onclick="openGallery('facade')" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500"><div class="overlay"><h3>واجهات</h3></div></div>
+                <div class="portfolio-item" onclick="openGallery('landscape')" data-aos="zoom-in" data-aos-delay="100"><img src="https://images.unsplash.com/photo-1558603668-6570496b66f8?w=500"><div class="overlay"><h3>لاندسكيب</h3></div></div>
+                <div class="portfolio-item" onclick="openGallery('exec')" data-aos="zoom-in" data-aos-delay="200"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=500"><div class="overlay"><h3>التنفيذ</h3></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title text-center">تواصل معنا</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-left">
+                    <p><i class="fas fa-phone"></i> +966 50 123 4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> الرياض - المملكة العربية السعودية</p>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-snapchat"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="map" data-aos="fade-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231884.07255938812!2d46.49206233156635!3d24.7135516933544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d8741bb%3A0x44a3c3411c0ed11!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1709400000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="galleryModal" class="modal">
+        <span class="close" onclick="closeGallery()">×</span>
+        <div class="modal-content">
+            <h2 id="modalTitle"></h2>
+            <div id="modalImages" class="modal-grid"></div>
+        </div>
+    </div>
+
+    <footer><p>© 2026 مكتب أريج الألوان للتصميم والتنفيذ</p></footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+                                                            </html>
